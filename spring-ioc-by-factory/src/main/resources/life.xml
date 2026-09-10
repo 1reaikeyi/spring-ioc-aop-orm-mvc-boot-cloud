@@ -8,18 +8,9 @@
        ">
 
     <!-- 此处配置Bean、依赖注入等内容 -->
-<!--    <bean id="life1" class="life.Life" init-method="ininBean" destroy-method="destroyBean">-->
-<!--        <property name="id" value="1"/>-->
-<!--    </bean>-->
 
-<!--    <bean id="life2" class="life.Lifecycle" init-method="ininBean" destroy-method="destroyBean">-->
-<!--        <property name="id" value="2"/>-->
-<!--    </bean>-->
-
-    <bean id="life3" class="life.Lifecycle" init-method="ininBean" destroy-method="destroyBean">
+    <bean id="life" class="life.BeanLife" init-method="initBean" destroy-method="destroyBean">
         <property name="id" value="3"/>
     </bean>
-    <bean class="life.Logbean"/>
-
-
+    <bean id="bbp" class="life.BBP"/>
 </beans>

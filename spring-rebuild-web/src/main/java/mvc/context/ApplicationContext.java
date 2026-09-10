@@ -26,7 +26,11 @@ public class ApplicationContext {
         }
         Node root = document.getRootElement();
         Element element1 = (Element) root.selectSingleNode("/beans/comment-scan");
-        componentScan(element1);
+        try {
+            componentScan(element1);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("ioc加载的bean" + map);
         Element element2 = (Element) root.selectSingleNode("/beans/bean");
         createViewResolver(element2);

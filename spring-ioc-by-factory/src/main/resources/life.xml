@@ -12,5 +12,5 @@
     <bean id="life" class="life.BeanLife" init-method="initBean" destroy-method="destroyBean">
         <property name="id" value="3"/>
     </bean>
-    <bean id="bbp" class="life.BBP"/>
+    <bean id="bbp" class="life.BPP"/>
 </beans>
